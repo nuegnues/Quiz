@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "neurimboGothicRegular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "IBMPlexSansKR-Regular";
+}
+
+body {
+  background-color: black;
+  padding-top: 60px;
+}
+
+.main_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "neurimboGothicRegular";
+  padding-top: 100px;
+  font-size: 80px;
+  color: rgba(251, 44, 44, 0.71);
+  text-align: center;
+}
+
+.title_info {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.start_btn {
+  color: white;
+  font-size: 20px;
+  background-color: rgba(251, 44, 44, 0.71);
+  margin-top: 20px;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.start_btn:hover {
+  filter: brightness(0.85);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiz_number {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.problem_wrapper {
+  color: white;
+  width: 950px;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-top: 1.5px solid white;
+  border-bottom: 1.5px solid white;
+}
+
+.quiz_content {
+  padding-top: 30px;
+}
+
+.option {
+  color: white;
+  background-color: transparent;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.img_option {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.opt_img {
+  margin-left: 7px;
+  width: 180px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 49;
+}
+
+.confirm-box {
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  padding: 40px 100px 40px 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  text-align: center;
+}
+
+.confirm-btn {
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  padding: 8px 12px 8px 12px;
+  margin-right: 3px;
+  margin-top: 40px;
+  background-color: rgb(35, 152, 247);
+  border: none;
+}
+
+.cancel-btn {
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  padding: 8px 12px 8px 12px;
+  margin-left: 3px;
+  background-color: rgb(249, 43, 43);
+  border: none;
+}
+
+.confirm-btn:hover,
+.cancel-btn:hover {
+  filter: brightness(0.85);
+}
+
+.quiz_result {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.true-or-false {
+  display: flex;
+}
+
+.true_answer,
+.false_answer {
+  font-size: 40px;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.true_answer {
+  color: green;
+}
+
+.false_answer {
+  color: red;
+}
+
+.answer_info {
+  color: white;
+  padding-top: 4.2px;
+  font-size: 17px;
+}
+
+.explanation {
+  color: white;
+  font-size: 17px;
+}
+
+.next_quiz {
+  margin-top: 10px;
+  font-size: 17px;
+  color: white;
+  background-color: rgba(251, 44, 44, 0.71);
+  padding: 8px 12px 8px 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.next_quiz:hover {
+  filter: brightness(0.85);
+}
+
+.last_result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.your_result {
+  font-family: "neurimboGothicRegular";
+  padding-top: 100px;
+  margin-bottom: 25px;
+  font-size: 60px;
+  color: rgba(251, 44, 44, 0.71);
+  text-align: center;
+}
+
+.score {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+.show_main {
+  color: white;
+  font-size: 16px;
+  background-color: rgba(251, 44, 44, 0.71);
+  padding: 8px 12px 8px 12px;
+  margin-top: 50px;
+  width: 130px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.show_main:hover {
+  filter: brightness(0.85);
+}
+
+.img_7 {
+  width: 270px;
+  margin-bottom: 15px;
+}
