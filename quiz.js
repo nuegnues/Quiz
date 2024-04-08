@@ -107,9 +107,11 @@ function init() {
 }
 
 init();
+let isCheckedAnswer = false;
 
 function makeQuiz() {
   result_area.innerHTML = null;
+  isCheckedAnswer = false;
   if (start == end) {
     showResult();
   }
@@ -120,6 +122,10 @@ function makeQuiz() {
 }
 
 function confirmBox(user_answer) {
+  if (isCheckedAnswer) {
+    rejectBox();
+    return;
+  }
   var confirm_box = document.createElement("div");
   confirm_box.setAttribute("class", "confirm-box");
   confirm_box.innerHTML =
@@ -138,6 +144,7 @@ function confirmBox(user_answer) {
   return new Promise(function () {
     var confirmButton = document.querySelector(".confirm-btn");
     confirmButton.addEventListener("click", function () {
+      isCheckedAnswer = true;
       document.body.removeChild(confirm_box);
       document.body.removeChild(background);
 
